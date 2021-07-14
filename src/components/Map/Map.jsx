@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
-import * as parkDate from "../Data/skateboard-parks.json";
+import * as artifactData from "../Data/artifacts.json";
 import "../Map/Map.css";
 
 function Map() {
@@ -10,18 +10,18 @@ function Map() {
 
 	const SIZE = 20;
 	const [viewport, setViewport] = useState({
-		latitude: 45.4211,
-		longitude: -75.6903,
+		latitude: 40,
+		longitude: 20,
 		width: "100vw",
 		height: "100vh",
-		zoom: 10,
+		zoom: 2,
 	});
-	const [selectedPark, setSelectedPark] = useState(null);
+	const [selectedArtifact, setSelectedArtifact] = useState(null);
 
 	useEffect(() => {
 		const listener = e => {
 			if (e.key === "Escape") {
-				setSelectedPark(null);
+				setSelectedArtifact(null);
 			}
 		};
 		window.addEventListener("keydown", listener);
@@ -40,8 +40,8 @@ function Map() {
 				onViewportChange={viewport => {
 					setViewport(viewport);
 				}}>
-				{parkDate.features.map(park => (
-					<Marker key={park.properties.PARK_ID} latitude={park.geometry.coordinates[1]} longitude={park.geometry.coordinates[0]}>
+				{artifactData.artifacts.map(artifact => (
+					<Marker key={artifact.name} latitude={artifact.geometry.coordinates[1]} longitude={artifact.geometry.coordinates[0]}>
 						<svg
 							height={SIZE}
 							viewBox="0 0 24 24"
@@ -53,25 +53,28 @@ function Map() {
 							}}
 							onClick={e => {
 								e.preventDefault();
-								setSelectedPark(park);
+								setSelectedArtifact(artifact);
 							}}>
 							<path d={ICON} />
 						</svg>
 					</Marker>
 				))}
 
-				{selectedPark ? (
+				{selectedArtifact ? (
 					<Popup
-						latitude={selectedPark.geometry.coordinates[1]}
-						longitude={selectedPark.geometry.coordinates[0]}
+						className="popup"
+						latitude={selectedArtifact.geometry.coordinates[1]}
+						longitude={selectedArtifact.geometry.coordinates[0]}
 						tipSize={5}
 						anchor="top"
 						onClose={() => {
-							setSelectedPark(null);
+							setSelectedArtifact(null);
 						}}>
 						<div>
-							<h2>{selectedPark.properties.NAME}</h2>
-							<p>{selectedPark.properties.DESCRIPTIO}</p>
+							<h2>{selectedArtifact.name}</h2>
+							<p>{selectedArtifact.dateCreated}</p>
+							<p>{selectedArtifact.description}</p>
+							<img src={selectedArtifact.imageURL} />
 						</div>
 					</Popup>
 				) : null}
