@@ -1,232 +1,308 @@
 {
-	"artifacts": [
-		{
-			"name": "Mask of Agamenmnon",
-			"region": "Europe",
-			"country": "Greece",
-			"dateCreated": "1550-1500 BC",
-			"description": "mask",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Greece%2FMask%20of%20Agmennon.jpeg?alt=media&token=2c14342c-9541-4f6a-8519-4f74244801e0",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [23.7275, 37.9838]
-			}
-		},
-		{
-			"name": "20-Sided Die",
-			"region": "Europe",
-			"country": "Greece",
-			"dateCreated": "2nd century - 4th century AD",
-			"description": "A twenty-sided die with faces inscribed with Greek letters. Nothing specific about their use is preserved, but researchers think they were used for games or possibly divination — seeking advice about the unknown from supernatural forces. Dated back to 2nd century B.C. – 4th century A.D.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Greece%2F20-sided%20die.png?alt=media&token=fc98927d-ae9d-4b9a-9c88-d6ecaaa2fb6a",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [22.4303, 37.0745]
-			}
-		},
-		{
-			"name": "Hellenistic-snake-bracelet",
-			"region": "Europe",
-			"country": "Greece",
-			"dateCreated": "3rd century - 2nd century BC",
-			"description": "Jewel",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Greece%2Fhellenistic-snake-bracelet.png?alt=media&token=e9510c3e-39b4-489a-9830-497f804c4243",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [25.4303, 40.0745]
-			}
-		},
-		{
-			"name": "Armadura conquistador",
-			"region": "Europe",
-			"country": "Spain",
-			"dateCreated": "1500 BC",
-			"description": "armor",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Spain%2FArmadura%20conquistador.png?alt=media&token=9d654f16-624c-4304-9dfb-517e3a37a78d",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [-3.7038, 40.4168]
-			}
-		},
-		{
-			"name": "Columbian shell",
-			"region": "Europe",
-			"country": "Spain",
-			"dateCreated": "1500 BC",
-			"description": "ancient stone",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Spain%2FColumbian-shell.png?alt=media&token=f3ffba55-c173-4402-bd68-d5e9fa87ebce",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [2.1734, 41.3851]
-			}
-		},
-		{
-			"name": "Pablo Picasso’s Madoura Pottery vase",
-			"region": "Europe",
-			"country": "Italy",
-			"dateCreated": "1955",
-			"description": "vase",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Italy%2FPablo%20Picasso%E2%80%99s%20Madoura%E2%80%AFPottery%20vase.png?alt=media&token=9242d65a-7225-48bc-800a-0c15c30ce92b",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [12.5674, 41.8719]
-			}
-		},
-		{
-			"name": "Blue Urn",
-			"region": "Europe",
-			"country": "Italy",
-			"dateCreated": "1500 BC",
-			"description": "Urn",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Italy%2FBlue%20Urn.png?alt=media&token=ea871eac-fb53-4ecd-9daf-a104851cbe45",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [15.5674, 40.8719]
-			}
-		},
-		{
-			"name": "Ancient Columbian Mask",
-			"region": "Europe",
-			"country": "Italy",
-			"dateCreated": "18th century",
-			"description": "The ancient mask of the Colombina, which covers only the part of the eyes, is enriched with an handle and golden metal applications that represent a butterfly wing surrounded by rhinestone expertly applied one by one by expert hands. Was used by Venetian noblewomen to participate in lavish parties without being recognized thus increasing the mystery and the charm.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Italy%2FAncienct%20columbian%20mask.png?alt=media&token=382b7a38-6909-49b1-98db-cf10c7cc450a",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [10.5674, 44.8719]
-			}
-		},
-		{
-			"name": "Roman Helmet",
-			"region": "Europe",
-			"country": "Italy",
-			"dateCreated": "18th century",
-			"description": "A 2,000-year-old helmet that was worn by the elite cavalry of the Roman army.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Netherlands%2FConsole%20clock%20in%20Boulle%20style%20marquetry.png?alt=media&token=95731679-0055-47e0-8292-0959c8cc88ad",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [7.5674, 44.8719]
-			}
-		},
-		{
-			"name": "Dutch Sapphire Ring",
-			"region": "Europe",
-			"country": "Netherlands",
-			"dateCreated": "1st century",
-			"description": "This 2,000-year-old sapphire ring is thought to have belonged to Caligula, the notorious ancient Roman emperor that reigned in 37 A.D. The portrait carved into the sapphire is thought to be of Caligula’s last wife, Caesonia.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Netherlands%2FConsole%20clock%20in%20Boulle%20style%20marquetry.png?alt=media&token=95731679-0055-47e0-8292-0959c8cc88ad",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [5.2913, 52.1326]
-			}
-		},
-		{
-			"name": "Console clock in Boulle style marquetry",
-			"region": "Europe",
-			"country": "Netherlands",
-			"dateCreated": "1750",
-			"description": "clock.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Netherlands%2FConsole%20clock%20in%20Boulle%20style%20marquetry.png?alt=media&token=95731679-0055-47e0-8292-0959c8cc88ad",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [6.2913, 53.1326]
-			}
-		},
-		{
-			"name": "Vietnamese Kiem",
-			"region": "Asia",
-			"country": "Vietnam",
-			"dateCreated": "19th century",
-			"description": "A 19TH CENTURY VIETNAMESE KIEM OR SWORD, 66cm curved double fullered blade engraved with swirling smoke, characteristic white metal hilt decorated with dragons and foliage, dragon's head pommel, polished wild pig tusk grip, contained in its white metal mounted wooden scabbard decorated to match.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Vietnam%2FVIETNAMESE%20KIEM%20OR%20SWORD.png?alt=media&token=7bd9f632-4e0e-4e5e-8511-bcacc6988c06",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [108.2772, 14.0583]
-			}
-		},
-		{
-			"name": "Mythical Bird-Man",
-			"region": "Asia",
-			"country": "Thailand",
-			"dateCreated": "1755 BC",
-			"description": "Wood with remnants of lacquer, gilding, and mirrored-glass inlay.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Thailand%2FMythical%20bird-man.png?alt=media&token=e7b15f50-01aa-44d3-981f-3a5fb979f2ec",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [100.2772, 16.0583]
-			}
-		},
-		{
-			"name": "Singa Bersayap",
-			"region": "Asia",
-			"country": "Indonesia",
-			"dateCreated": "1940",
-			"description": "It has a ferocious expression, bulging eyes and fierce fangs. It has wings and a flaming mane.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Indonesia%2FSinga%20Bersayap.png?alt=media&token=8a75566a-e7a2-4cf9-9179-b23f4e5a80e4",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [113, -1]
-			}
-		},
-		{
-			"name": "Ancient Indonesian Masks",
-			"region": "Asia",
-			"country": "Thailand",
-			"dateCreated": "1980",
-			"description": "Nias Mask on Stand from the region of Nias Indonesia, each mask is carved from a single wood",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Indonesia%2FAncient%20indonesian%20masks.png?alt=media&token=4e7e082e-b49b-43b6-995f-5b461d357558",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [120, -2]
-			}
-		},
-		{
-			"name": "Ancient Game",
-			"region": "Asia",
-			"country": "India",
-			"dateCreated": "2600 BC",
-			"description": "Ancient game from Mohenjo Daro, Indus Valley. 2600 B.C.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/India%2FAncient%20game.png?alt=media&token=bbe65dcb-a0bc-47c3-bd8b-056ab0b95431",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [74, 25]
-			}
-		},
-		{
-			"name": "Mask of Xiutecuhlti, god of fire",
-			"region": "South America",
-			"country": "Columbia",
-			"dateCreated": "1325-1521",
-			"description": "Mask",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Columbia%2FMask%20of%20Xiutecuhlti%2C%20god%20of%20fire.png?alt=media&token=7a2b1311-3173-41d9-8c3e-0553b2baacd3",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [-74, 5]
-			}
-		},
-		{
-			"name": "Relics of ancient Incas",
-			"region": "South America",
-			"country": "Peru",
-			"dateCreated": "1400-1533",
-			"description": "Sun Artifact.",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Peru%2FRelics%20of%20ancient%20Incas%20of%20Peru.png?alt=media&token=72c8077c-6a0a-4c63-9b3c-0e9ac2307393",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [-76, -7]
-			}
-		},
-		{
-			"name": "French Style Pitcher",
-			"region": "South America",
-			"country": "Peru",
-			"dateCreated": "1500 BC",
-			"description": "Pitcher",
-			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Peru%2FFrench%20Style%20Pitcher.png?alt=media&token=90ba9237-b1c8-47db-ab3d-568ed0ca97c1",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [-72, -15]
-			}
-		}
-	]
+    "artifacts": [
+        {
+            "id": 1,
+            "name": "Mask of Agamenmnon",
+            "region": "Europe",
+            "country": "Greece",
+            "dateCreated": "1550-1500 BC",
+            "description": "mask",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Greece%2FMask%20of%20Agmennon.jpeg?alt=media&token=2c14342c-9541-4f6a-8519-4f74244801e0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [23.7275, 37.9838]
+            },
+            "auctionType": "1",
+            "auctionDescription": "First priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 2,
+            "name": "20-Sided Die",
+            "region": "Europe",
+            "country": "Greece",
+            "dateCreated": "2nd century - 4th century AD",
+            "description": "A twenty-sided die with faces inscribed with Greek letters. Nothing specific about their use is preserved, but researchers think they were used for games or possibly divination — seeking advice about the unknown from supernatural forces. Dated back to 2nd century B.C. – 4th century A.D.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Greece%2F20-sided%20die.png?alt=media&token=fc98927d-ae9d-4b9a-9c88-d6ecaaa2fb6a",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [22.4303, 37.0745]
+            },
+            "auctionType": "1",
+            "auctionDescription": "First priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 4,
+            "name": "Hellenistic-snake-bracelet",
+            "region": "Europe",
+            "country": "Greece",
+            "dateCreated": "3rd century - 2nd century BC",
+            "description": "Jewel",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Greece%2Fhellenistic-snake-bracelet.png?alt=media&token=e9510c3e-39b4-489a-9830-497f804c4243",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [25.4303, 40.0745]
+            },
+            "auctionType": "1",
+            "auctionDescription": "First priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 5,
+            "name": "Armadura conquistador",
+            "region": "Europe",
+            "country": "Spain",
+            "dateCreated": "1500 BC",
+            "description": "armor",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Spain%2FArmadura%20conquistador.png?alt=media&token=9d654f16-624c-4304-9dfb-517e3a37a78d",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-3.7038, 40.4168]
+            },
+            "auctionType": "1",
+            "auctionDescription": "First priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {	
+            "id": 6,
+            "name": "Columbian shell",
+            "region": "Europe",
+            "country": "Spain",
+            "dateCreated": "1500 BC",
+            "description": "ancient stone",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Spain%2FColumbian-shell.png?alt=media&token=f3ffba55-c173-4402-bd68-d5e9fa87ebce",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [2.1734, 41.3851]
+            },
+            "auctionType": "1",
+            "auctionDescription": "First priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 7,
+            "name": "Pablo Picasso’s Madoura Pottery vase",
+            "region": "Europe",
+            "country": "Italy",
+            "dateCreated": "1955",
+            "description": "vase",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Italy%2FPablo%20Picasso%E2%80%99s%20Madoura%E2%80%AFPottery%20vase.png?alt=media&token=9242d65a-7225-48bc-800a-0c15c30ce92b",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [12.5674, 41.8719]
+            },
+            "auctionType": "1",
+            "auctionDescription": "First priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 8,
+            "name": "Blue Urn",
+            "region": "Europe",
+            "country": "Italy",
+            "dateCreated": "1500 BC",
+            "description": "Urn",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Italy%2FBlue%20Urn.png?alt=media&token=ea871eac-fb53-4ecd-9daf-a104851cbe45",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [15.5674, 40.8719]
+            },
+            "auctionType": "2",
+            "auctionDescription": "second priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 9,
+            "name": "Ancient Columbian Mask",
+            "region": "Europe",
+            "country": "Italy",
+            "dateCreated": "18th century",
+            "description": "The ancient mask of the Colombina, which covers only the part of the eyes, is enriched with an handle and golden metal applications that represent a butterfly wing surrounded by rhinestone expertly applied one by one by expert hands. Was used by Venetian noblewomen to participate in lavish parties without being recognized thus increasing the mystery and the charm.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Italy%2FAncienct%20columbian%20mask.png?alt=media&token=382b7a38-6909-49b1-98db-cf10c7cc450a",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.5674, 44.8719]
+            },
+            "auctionType": "2",
+            "auctionDescription": "second priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 10,
+            "name": "Roman Helmet",
+            "region": "Europe",
+            "country": "Italy",
+            "dateCreated": "18th century",
+            "description": "A 2,000-year-old helmet that was worn by the elite cavalry of the Roman army.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Netherlands%2FConsole%20clock%20in%20Boulle%20style%20marquetry.png?alt=media&token=95731679-0055-47e0-8292-0959c8cc88ad",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.5674, 44.8719]
+            },
+            "auctionType": "2",
+            "auctionDescription": "second priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 11,
+            "name": "Dutch Sapphire Ring",
+            "region": "Europe",
+            "country": "Netherlands",
+            "dateCreated": "1st century",
+            "description": "This 2,000-year-old sapphire ring is thought to have belonged to Caligula, the notorious ancient Roman emperor that reigned in 37 A.D. The portrait carved into the sapphire is thought to be of Caligula’s last wife, Caesonia.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Netherlands%2FConsole%20clock%20in%20Boulle%20style%20marquetry.png?alt=media&token=95731679-0055-47e0-8292-0959c8cc88ad",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [5.2913, 52.1326]
+            },
+            "auctionType": "2",
+            "auctionDescription": "second priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 12,
+            "name": "Console clock in Boulle style marquetry",
+            "region": "Europe",
+            "country": "Netherlands",
+            "dateCreated": "1750",
+            "description": "clock.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Netherlands%2FConsole%20clock%20in%20Boulle%20style%20marquetry.png?alt=media&token=95731679-0055-47e0-8292-0959c8cc88ad",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [6.2913, 53.1326]
+            },
+            "auctionType": "2",
+            "auctionDescription": "second priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 13,
+            "name": "Vietnamese Kiem",
+            "region": "Asia",
+            "country": "Vietnam",
+            "dateCreated": "19th century",
+            "description": "A 19TH CENTURY VIETNAMESE KIEM OR SWORD, 66cm curved double fullered blade engraved with swirling smoke, characteristic white metal hilt decorated with dragons and foliage, dragon's head pommel, polished wild pig tusk grip, contained in its white metal mounted wooden scabbard decorated to match.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Vietnam%2FVIETNAMESE%20KIEM%20OR%20SWORD.png?alt=media&token=7bd9f632-4e0e-4e5e-8511-bcacc6988c06",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [108.2772, 14.0583]
+            },
+            "auctionType": "2",
+            "auctionDescription": "second priced sealed-bid auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 14,
+            "name": "Mythical Bird-Man",
+            "region": "Asia",
+            "country": "Thailand",
+            "dateCreated": "1755 BC",
+            "description": "Wood with remnants of lacquer, gilding, and mirrored-glass inlay.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Thailand%2FMythical%20bird-man.png?alt=media&token=e7b15f50-01aa-44d3-981f-3a5fb979f2ec",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100.2772, 16.0583]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 15,
+            "name": "Singa Bersayap",
+            "region": "Asia",
+            "country": "Indonesia",
+            "dateCreated": "1940",
+            "description": "It has a ferocious expression, bulging eyes and fierce fangs. It has wings and a flaming mane.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Indonesia%2FSinga%20Bersayap.png?alt=media&token=8a75566a-e7a2-4cf9-9179-b23f4e5a80e4",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113, -1]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 16,
+            "name": "Ancient Indonesian Masks",
+            "region": "Asia",
+            "country": "Thailand",
+            "dateCreated": "1980",
+            "description": "Nias Mask on Stand from the region of Nias Indonesia, each mask is carved from a single wood",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Indonesia%2FAncient%20indonesian%20masks.png?alt=media&token=4e7e082e-b49b-43b6-995f-5b461d357558",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120, -2]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 17,
+            "name": "Ancient Game",
+            "region": "Asia",
+            "country": "India",
+            "dateCreated": "2600 BC",
+            "description": "Ancient game from Mohenjo Daro, Indus Valley. 2600 B.C.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/India%2FAncient%20game.png?alt=media&token=bbe65dcb-a0bc-47c3-bd8b-056ab0b95431",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [74, 25]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 18,
+            "name": "Mask of Xiutecuhlti, god of fire",
+            "region": "South America",
+            "country": "Columbia",
+            "dateCreated": "1325-1521",
+            "description": "Mask",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Columbia%2FMask%20of%20Xiutecuhlti%2C%20god%20of%20fire.png?alt=media&token=7a2b1311-3173-41d9-8c3e-0553b2baacd3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-74, 5]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 19,
+            "name": "Relics of ancient Incas",
+            "region": "South America",
+            "country": "Peru",
+            "dateCreated": "1400-1533",
+            "description": "Sun Artifact.",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Peru%2FRelics%20of%20ancient%20Incas%20of%20Peru.png?alt=media&token=72c8077c-6a0a-4c63-9b3c-0e9ac2307393",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-76, -7]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        },
+        {
+            "id": 20,
+            "name": "French Style Pitcher",
+            "region": "South America",
+            "country": "Peru",
+            "dateCreated": "1500 BC",
+            "description": "Pitcher",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/Peru%2FFrench%20Style%20Pitcher.png?alt=media&token=90ba9237-b1c8-47db-ab3d-568ed0ca97c1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-72, -15]
+            },
+            "auctionType": "3",
+            "auctionDescription": "English auction",
+            "originalValue": 10000
+        }
+    ]
 }
