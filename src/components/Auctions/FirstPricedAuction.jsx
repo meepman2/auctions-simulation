@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function FirstPricedSealedBid({ artifact }) {
+export default function FirstPricedAuction({ artifact }) {
   const classes = useStyles();
 
   return (
@@ -57,7 +57,7 @@ export default function FirstPricedSealedBid({ artifact }) {
               </Typography>
               <Typography variant="h6" component="p">
                 <div className={classes.originalprice}>Lowest Price : {artifact.originalValue}</div>
-                <h3>Enter your price in private zoom chat to me!</h3>
+                <h3>Enter your price in public zoom chat to me!</h3>
               </Typography>
               <div className={classes.pricecontainer}>
                 <TextField className={classes.textinput} id="outlined-basic" label="Enter your price" variant="outlined" />
