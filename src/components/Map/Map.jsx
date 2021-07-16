@@ -45,7 +45,6 @@ function Map() {
 				mapStyle="mapbox://styles/varunsachdeva/ckqukbhxy6dr418qsh529bunr">
 				{artifactData.artifacts.map(artifact => {
 					const isSelectedArtifact = selectedArtifact && artifact.id === selectedArtifact.id;
-					console.log("isSelectedArtifact", isSelectedArtifact);
 					return (
 						<Marker key={artifact.name} latitude={artifact.geometry.coordinates[1]} longitude={artifact.geometry.coordinates[0]}>
 							<svg
