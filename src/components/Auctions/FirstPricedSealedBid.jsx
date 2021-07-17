@@ -60,7 +60,7 @@ export default function FirstPricedSealedBid({ artifact }) {
             <CardMedia
             className={classes.media}
             component="img"
-            height="350px"
+            height="200px"
             image={artifact.imageURL}
             title={artifact.name}
             />

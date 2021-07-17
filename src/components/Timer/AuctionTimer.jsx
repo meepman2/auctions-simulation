@@ -9,7 +9,6 @@ function AuctionTimer({ expiryTimestamp }) {
     isRunning,
     start,
     pause,
-    resume,
     restart,
   } = useTimer({ expiryTimestamp, onExpire: () => console.warn('onExpire called') });
 
@@ -23,7 +22,6 @@ function AuctionTimer({ expiryTimestamp }) {
       <Button variant="contained" style={{backgroundColor: 'green', color: '#ffffff', marginRight: '5px'}} onClick={start}>Start</Button>
       <Button variant="contained" color="secondary" onClick={pause} style={{color: '#ffffff', marginRight: '5px'}}>Pause</Button>
       <Button variant="contained" style={{backgroundColor: '#404549', color: '#ffffff', marginRight: '5px'}} onClick={() => {
-        // Restarts to 5 minutes timer
         const time = new Date();
         time.setSeconds(time.getSeconds() + 150);
         restart(time)

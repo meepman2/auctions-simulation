@@ -15,9 +15,10 @@ import clsx from "clsx";
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		maxWidth: 245,
+		width: 245,
 		float: "right",
 		padding: 10,
+		marginRight: '10px',
 	},
 	expand: {
 		transform: "rotate(0deg)",
@@ -30,9 +31,14 @@ const useStyles = makeStyles(theme => ({
 		transform: "rotate(180deg)",
 	},
 	form: {
-		padding: 10,
+		margin: '0 0 20px 50px',
 		width: 200,
 	},
+	paybutton: {
+		margin: '0 0 20px 50px',
+		backgroundColor: 'purple',
+		color: '#ffffff'
+	}
 }));
 
 function AirportNPC() {
@@ -102,7 +108,7 @@ function AirportNPC() {
 							className={classes.form}
 							size="small"
 							name="departure"
-							placeholder="Departure"
+							placeholder="Currently In"
 							variant="outlined"
 							onChange={handleChange}
 						/>
@@ -110,14 +116,16 @@ function AirportNPC() {
 							className={classes.form}
 							size="small"
 							name="arrival"
-							placeholder="Arrival"
+							placeholder="Fly To"
 							variant="outlined"
 							onChange={handleChange}
 						/>
-						<Button className={classes.form} variant="contained" color="primary" onClick={handleClick}>
-							Calculate
-						</Button>
-						<TextField className={classes.form} size="small" name="fare" placeholder="Fare" variant="outlined" value={fare} />
+						<div>
+							<TextField className={classes.form} size="small" name="fare" placeholder="Fare" variant="outlined" value={fare} />
+							<Button className={classes.paybutton} variant="contained" onClick={handleClick}>
+								Pay
+							</Button>
+						</div>
 					</form>
 				</CardContent>
 			</Collapse>

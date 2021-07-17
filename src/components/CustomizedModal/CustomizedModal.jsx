@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
+  customizedmodal: {
+    backgroundColor: 'black',
+  },
   closeicon: {
     float: 'right',
     backgroundColor: '#ffffff',
@@ -52,6 +55,7 @@ const CustomizedModal = (props) => {
         onClose={handleClose}
         aria-labelledby="customized-modal-title"
         aria-describedby="customized-modal-description"
+        className={classes.customizedmodal}
       >
         <>
           <IconButton aria-label="close" onClick={handleClose} className={classes.closeicon}>

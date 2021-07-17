@@ -10,45 +10,47 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
-	root: {
-		maxWidth: 345,
-		margin: "auto",
-	},
+    root: {
+        width: 300,
+        margin: "0 auto",
+    },
 }));
 
 function RulesCard() {
-	const classes = useStyles();
-	const [expanded, setExpanded] = useState(false);
+    const classes = useStyles();
+    const [expanded, setExpanded] = useState(false);
 
-	const handleExpandClick = () => {
-		setExpanded(!expanded);
-	};
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
 
-	return (
-		<Card className={classes.root}>
-			<CardHeader
-				title="Rules"
-				action={
-					<IconButton
-						className={clsx(classes.expand, {
-							[classes.expandOpen]: expanded,
-						})}
-						onClick={handleExpandClick}
-						aria-expanded={expanded}
-						aria-label="show more">
-						<ExpandMoreIcon />
-					</IconButton>
-				}></CardHeader>
-			<Collapse in={expanded} timeout="auto" unmountOnExit>
-				<CardContent>
-					<Typography variant="body2" color="textSecondary" component="p">
-						This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along
-						with the mussels, if you like.
-					</Typography>
-				</CardContent>
-			</Collapse>
-		</Card>
-	);
+    return (
+        <Card className={classes.root}>
+            <CardHeader
+                title="Rules"
+                action={
+                    <IconButton
+                        className={clsx(classes.expand, {
+                            [classes.expandOpen]: expanded,
+                        })}
+                        onClick={handleExpandClick}
+                        aria-expanded={expanded}
+                        aria-label="show more">
+                        <ExpandMoreIcon />
+                    </IconButton>
+                }></CardHeader>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+                <CardContent>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        You can choose from the below 3 moves in each turn.
+                        <p>1. <span style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Buy</span> an item</p>
+                        <p>2. <span style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Sell</span> an item to the expert</p>
+                        <p>3. <span style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Travel</span> to a different country</p>
+                    </Typography>
+                </CardContent>
+            </Collapse>
+        </Card>
+    );
 }
 
 export default RulesCard;

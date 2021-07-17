@@ -15,6 +15,9 @@ import FirstPricedSealedBid from '../Auctions/FirstPricedSealedBid.jsx';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    float: "left",
+    top: 0,
+    position: 'absolute'
   },
   media: {
     objectFit: 'contain'
