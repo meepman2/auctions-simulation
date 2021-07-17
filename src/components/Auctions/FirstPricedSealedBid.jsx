@@ -6,6 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Tabs from '../Tabs/CustomizedTabs';
+import AuctionTimer from '../Timer/AuctionTimer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 const steps = [{
   id: 0,
-  description: 'Discuss how much gold you want to spend on this item with your teammates in breakout room. You have 2 minutes.'
+  description: 'How much gold do you want to spend on this item? Discuss it with your teammates in breakout room. You have 3 minutes.'
 }, {
   id: 1,
   description: 'Come back and tell the price to me in private zoom chat.'
@@ -46,6 +47,8 @@ const steps = [{
 
 export default function FirstPricedSealedBid({ artifact }) {
   const classes = useStyles();
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + 150);
 
   return (
     <div>
@@ -70,6 +73,7 @@ export default function FirstPricedSealedBid({ artifact }) {
                 <h3>FOLLOW BELOW STEPS</h3>
               </Typography>
               <Tabs stepsData={steps} />
+              <AuctionTimer expiryTimestamp={time} />
             </CardContent>
         </Card>
     </div>

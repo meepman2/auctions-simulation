@@ -69,7 +69,7 @@ export default function CustomizedTabs(props) {
             {stepsData.map((step) => {
                 const { id } = step;
                 return (
-                    <Tab label={`Step ${id}`} {...a11yProps(id)} />
+                    <Tab label={`Step ${id+1}`} {...a11yProps(id)} />
                 )
             })}
         </Tabs>
@@ -78,9 +78,9 @@ export default function CustomizedTabs(props) {
           stepsData.map(step => {
               const { id, description } = step;
             return (
-                <TabPanel value={value} index={id} className={classes.tabpanelstyle}>
-                    {description}
-                </TabPanel>
+              <TabPanel value={value} index={id} className={classes.tabpanelstyle}>
+                  {description}
+              </TabPanel>
             )
           })
       }

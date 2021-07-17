@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 
 const CustomizedModal = (props) => {
   const classes = useStyles();
-  console.log('open', props);
   const { open, setOpenModal } = props;
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
