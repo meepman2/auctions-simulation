@@ -5,8 +5,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
-import Button from '../CustomizedButton/CustomizedButton';
+import Tabs from '../Tabs/CustomizedTabs';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,21 +20,23 @@ const useStyles = makeStyles((theme) => ({
   originalprice: {
     margin: '10px 25%'
   },
-  textinput: {
-    display: 'inline-block',
-    width: '60%'
-  },
   buttonstyle: {
     display: 'inline-block'
   },
-  pricecontainer: {
-    position: 'relative',
-    display: 'flex'
-  }
 }));
 
 export default function FirstPricedAuction({ artifact }) {
   const classes = useStyles();
+
+  const steps = [
+      {
+          id: 0,
+          description: 'Discuss how much gold you want to spend on this item with your teammates in chat. You have 2 minutes.'
+      }, {
+          id: 1,
+          description: 'Yell your prices in front of everyone!!'
+      }
+  ];
 
   return (
     <div>
@@ -56,13 +57,10 @@ export default function FirstPricedAuction({ artifact }) {
                   {artifact.description}
               </Typography>
               <Typography variant="h6" component="p">
-                <div className={classes.originalprice}>Lowest Price : {artifact.originalValue}</div>
-                <h3>Enter your price in public zoom chat to me!</h3>
+                <div className={classes.originalprice}>Beginning with Price : {artifact.originalValue}</div>
+                <h3>FOLLOW BELOW STEPS</h3>
               </Typography>
-              <div className={classes.pricecontainer}>
-                <TextField className={classes.textinput} id="outlined-basic" label="Enter your price" variant="outlined" />
-                <Button className={classes.buttonstyle} buttontext={'Submit my price'} />
-              </div>
+              <Tabs stepsData={steps} />
             </CardContent>
         </Card>
     </div>
