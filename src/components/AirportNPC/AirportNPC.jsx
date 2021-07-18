@@ -12,13 +12,14 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 import clsx from "clsx";
+import currency from "currency.js";
 
 const useStyles = makeStyles(theme => ({
 	root: {
 		width: 245,
 		float: "right",
 		padding: 10,
-		marginRight: '10px',
+		marginRight: "10px",
 	},
 	expand: {
 		transform: "rotate(0deg)",
@@ -31,14 +32,14 @@ const useStyles = makeStyles(theme => ({
 		transform: "rotate(180deg)",
 	},
 	form: {
-		margin: '0 0 20px 50px',
+		margin: "0 0 20px 50px",
 		width: 200,
 	},
 	paybutton: {
-		margin: '0 0 20px 50px',
-		backgroundColor: 'purple',
-		color: '#ffffff'
-	}
+		margin: "0 0 20px 50px",
+		backgroundColor: "purple",
+		color: "#ffffff",
+	},
 }));
 
 function AirportNPC() {
@@ -60,7 +61,7 @@ function AirportNPC() {
 			{ latitude: arrivalCoordinates[1], longitude: arrivalCoordinates[0] }
 		);
 
-		setFare(distance);
+		setFare(currency(distance, { pattern: `# ` }).format());
 	}, [departureCoordinates]);
 
 	const handleChange = event => {
