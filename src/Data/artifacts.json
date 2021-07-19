@@ -15,7 +15,8 @@
 			},
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
-			"originalValue": 10000
+			"originalValue": 10000,
+			"render": true
 		},
 		{
 			"id": 2,
@@ -32,7 +33,8 @@
 			},
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
-			"originalValue": 15000
+			"originalValue": 15000,
+			"render": true
 		},
 		{
 			"id": 3,
@@ -49,7 +51,8 @@
 			},
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
-			"originalValue": 20000
+			"originalValue": 20000,
+			"render": true
 		},
 		{
 			"id": 4,
@@ -66,7 +69,8 @@
 			},
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
-			"originalValue": 25000
+			"originalValue": 25000,
+			"render": true
 		},
 		{
 			"id": 5,
@@ -83,7 +87,8 @@
 			},
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
-			"originalValue": 30000
+			"originalValue": 30000,
+			"render": true
 		},
 		{
 			"id": 6,
@@ -100,7 +105,8 @@
 			},
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
-			"originalValue": 10000
+			"originalValue": 10000,
+			"render": true
 		},
 		{
 			"id": 7,
@@ -117,7 +123,8 @@
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
-			"originalValue": 40000
+			"originalValue": 40000,
+			"render": true
 		},
 		{
 			"id": 8,
@@ -134,7 +141,8 @@
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
-			"originalValue": 60000
+			"originalValue": 60000,
+			"render": true
 		},
 		{
 			"id": 9,
@@ -151,7 +159,8 @@
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
-			"originalValue": 35000
+			"originalValue": 35000,
+			"render": true
 		},
 		{
 			"id": 10,
@@ -168,7 +177,8 @@
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
-			"originalValue": 45000
+			"originalValue": 45000,
+			"render": true
 		},
 		{
 			"id": 11,
@@ -185,7 +195,8 @@
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
-			"originalValue": 37000
+			"originalValue": 37000,
+			"render": true
 		},
 		{
 			"id": 12,
@@ -202,7 +213,8 @@
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
-			"originalValue": 62000
+			"originalValue": 62000,
+			"render": true
 		},
 		{
 			"id": 13,
@@ -219,7 +231,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 56000
+			"originalValue": 56000,
+			"render": true
 		},
 		{
 			"id": 14,
@@ -236,7 +249,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 39000
+			"originalValue": 39000,
+			"render": true
 		},
 		{
 			"id": 15,
@@ -253,7 +267,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 22000
+			"originalValue": 22000,
+			"render": true
 		},
 		{
 			"id": 16,
@@ -270,7 +285,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 68000
+			"originalValue": 68000,
+			"render": true
 		},
 		{
 			"id": 17,
@@ -287,7 +303,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 43000
+			"originalValue": 43000,
+			"render": true
 		},
 		{
 			"id": 18,
@@ -304,7 +321,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 55000
+			"originalValue": 55000,
+			"render": true
 		},
 		{
 			"id": 19,
@@ -321,7 +339,8 @@
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
-			"originalValue": 77000
+			"originalValue": 77000,
+			"render": true
 		}
 	]
 }
