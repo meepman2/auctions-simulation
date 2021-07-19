@@ -70,7 +70,7 @@ export default function FirstPricedSealedBid({ artifact }) {
             title={artifact.name}
             />
             <CardContent>
-              <Typography component="subtitle2" variant="subtitle2" style={{fontWeight: '700',lineHeight: '2'}}>
+              <Typography variant="subtitle2" style={{fontWeight: '700',lineHeight: '2'}}>
                 {artifact.bodyType}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">

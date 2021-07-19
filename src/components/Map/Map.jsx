@@ -55,8 +55,9 @@ function Map() {
 								style={{
 									cursor: "pointer",
 									fill: isSelectedArtifact ? "#000" : "#d00",
-									stroke: "none",
+									stroke: "rgba(0, 0, 0, 0.40)",
 									transform: `translate(${-SIZE / 2}px,${-SIZE}px)`,
+									zIndex: '1000'
 								}}
 								onClick={e => {
 									e.preventDefault();

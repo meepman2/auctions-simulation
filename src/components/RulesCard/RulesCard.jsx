@@ -14,6 +14,9 @@ const useStyles = makeStyles(theme => ({
         width: 300,
         margin: "0 auto",
     },
+    expand: {
+        zIndex: '9999'
+    }
 }));
 
 function RulesCard() {

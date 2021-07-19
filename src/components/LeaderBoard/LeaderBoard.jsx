@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import { Avatar, makeStyles } from "@material-ui/core";
-import { red, blue, green } from "@material-ui/core/colors";
+import { yellow, blue, green } from "@material-ui/core/colors";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import currency from "currency.js";
@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
 		maxWidth: "300px",
 	},
 	avatarRed: {
-		backgroundColor: red[500],
+		backgroundColor: yellow[500],
 	},
 	avatarBlue: {
 		backgroundColor: blue[500],

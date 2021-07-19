@@ -58,7 +58,7 @@ export default function FirstPricedAuction({ artifact }) {
           title={artifact.name}
         />
         <CardContent>
-          <Typography variant="subtitle2" component="subtitle2" style={{fontWeight: '700', lineHeight: '2'}}>
+          <Typography variant="subtitle2" style={{fontWeight: '700', lineHeight: '2'}}>
             {artifact.bodyType}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
