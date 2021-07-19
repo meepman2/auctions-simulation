@@ -21,8 +21,16 @@ function Map() {
 		zoom: 2,
 	});
 	const [selectedArtifact, setSelectedArtifact] = useState(null);
-
+	const [renderPins, setRenderPins] = useState([]);
 	useEffect(() => {
+		artifactData.artifacts.map(car => {
+			if (car.render === true) {
+				setRenderPins(prevValues => {
+					return [...prevValues, car];
+				});
+			}
+		});
+
 		const listener = e => {
 			if (e.key === "Escape") {
 				setSelectedArtifact(null);
@@ -45,7 +53,7 @@ function Map() {
 				{...viewport}
 				mapboxApiAccessToken="pk.eyJ1IjoidmFydW5zYWNoZGV2YSIsImEiOiJja3F1azYxeHowNWQwMm9vMXpsNzFjZzdnIn0.vnKW75YqDHPdsKyoEH4BdA"
 				mapStyle="mapbox://styles/varunsachdeva/ckqukbhxy6dr418qsh529bunr">
-				{artifactData.artifacts.map(artifact => {
+				{renderPins.map(artifact => {
 					const isSelectedArtifact = selectedArtifact && artifact.id === selectedArtifact.id;
 					return (
 						<Marker key={artifact.name} latitude={artifact.geometry.coordinates[1]} longitude={artifact.geometry.coordinates[0]}>
@@ -57,7 +65,7 @@ function Map() {
 									fill: isSelectedArtifact ? "#000" : "#d00",
 									stroke: "rgba(0, 0, 0, 0.40)",
 									transform: `translate(${-SIZE / 2}px,${-SIZE}px)`,
-									zIndex: '1000'
+									zIndex: "1000",
 								}}
 								onClick={e => {
 									e.preventDefault();
