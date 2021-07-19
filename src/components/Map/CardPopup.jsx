@@ -47,12 +47,12 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact }) => {
   const renderAuctionModal = () => {
     const { auctionType } = selectedArtifact;
     const Component = auctionTypeMapping.reduce((acc, auction) => {
-      console.log('inside auctiontype', auctionType);
+      acc = FirstPricedSealedBid;
       if (auction.type === auctionType) {
-        console.log('inside');
         acc = auction.component;
         return acc;
       }
+      return acc;
     }, '');
     console.log('Component', Component);
     return <Component artifact={selectedArtifact} />

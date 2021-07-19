@@ -12,7 +12,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
     root: {
         width: 300,
-        margin: "0 auto",
+        margin: "0 55%",
     },
     expand: {
         zIndex: '9999'
@@ -28,7 +28,7 @@ function RulesCard() {
     };
 
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root} id="rules">
             <CardHeader
                 title="Rules"
                 action={
