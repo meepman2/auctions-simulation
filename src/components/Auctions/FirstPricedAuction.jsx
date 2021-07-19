@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 		objectFit: "contain",
 	},
 	originalprice: {
-		margin: "10px 25%",
+		margin: "10px 15%",
 	},
 	buttonstyle: {
 		display: "inline-block",
