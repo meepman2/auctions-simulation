@@ -56,13 +56,16 @@ export default function FirstPricedAuction({ artifact }) {
           title={artifact.name}
         />
         <CardContent>
+          <Typography variant="subtitle2" component="subtitle2" style={{fontWeight: '700', lineHeight: '2'}}>
+            {artifact.bodyType}
+          </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {artifact.description}
           </Typography>
           <Typography variant="h6" component="p">
-            <div className={classes.originalprice}>Beginning with Price : {artifact.originalValue}</div>
-            <h3>FOLLOW BELOW STEPS</h3>
+            <div className={classes.originalprice}>Beginning Price : {artifact.originalValue}</div>
           </Typography>
+          <h3>FOLLOW BELOW STEPS</h3>
           <Tabs stepsData={steps} />
           <AuctionTimer expiryTimestamp={time} />
         </CardContent>

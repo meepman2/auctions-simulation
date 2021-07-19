@@ -10,7 +10,19 @@ import CloseIcon from '@material-ui/icons/Close';
 import Button from '../CustomizedButton/CustomizedButton';
 import CustomizedModal from '../CustomizedModal/CustomizedModal';
 import FirstPricedSealedBid from '../Auctions/FirstPricedSealedBid.jsx';
+import FirstPricedAuction from '../Auctions/FirstPricedAuction.jsx';
 
+
+const auctionTypeMapping = [{
+  type: "1",
+  component: FirstPricedSealedBid
+}, {
+  type: "2",
+  component: FirstPricedAuction
+}, {
+  type: "3",
+  component: FirstPricedAuction
+}];
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +42,20 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact }) => {
 
   const openArtifactDetails = () => {
     setOpenModal(true);
+  }
+
+  const renderAuctionModal = () => {
+    const { auctionType } = selectedArtifact;
+    const Component = auctionTypeMapping.reduce((acc, auction) => {
+      console.log('inside auctiontype', auctionType);
+      if (auction.type === auctionType) {
+        console.log('inside');
+        acc = auction.component;
+        return acc;
+      }
+    }, '');
+    console.log('Component', Component);
+    return <Component artifact={selectedArtifact} />
   }
 
   return (
@@ -52,6 +78,9 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact }) => {
           title={selectedArtifact.name}
         />
         <CardContent>
+          <Typography component="subtitle2" variant="subtitle2" style={{fontWeight: '700',lineHeight: '2'}}>
+            {selectedArtifact.bodyType}
+          </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {selectedArtifact.description}
           </Typography>
@@ -61,7 +90,7 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact }) => {
       { openModal &&
       <CustomizedModal open={openModal} setOpenModal={setOpenModal}>
         <div>
-          <FirstPricedSealedBid artifact={selectedArtifact} />
+          {renderAuctionModal()}
         </div>
       </CustomizedModal>}
     </>

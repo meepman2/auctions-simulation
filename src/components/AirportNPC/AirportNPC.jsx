@@ -5,7 +5,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import * as artifactData from "../Data/artifacts.json";
+import * as artifactData from "../../Data/artifacts.json";
 import { getDistance } from "geolib";
 import loDash from "lodash";
 import Collapse from "@material-ui/core/Collapse";

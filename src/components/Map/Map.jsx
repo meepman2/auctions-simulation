@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
-import * as artifactData from "../Data/artifacts.json";
+import * as artifactData from "../../Data/artifacts.json";
 import "../Map/Map.css";
 import CardPopup from "./CardPopup";
 import AirportNPC from "../AirportNPC/AirportNPC";
