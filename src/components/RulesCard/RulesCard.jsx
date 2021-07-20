@@ -8,6 +8,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
+import { truncate } from "fs";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 function RulesCard() {
     const classes = useStyles();
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(true);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -37,7 +38,7 @@ function RulesCard() {
                 action={
                     <IconButton
                         className={clsx(classes.expand, {
-                            [classes.expandOpen]: expanded,
+                            [classes.expandOpen]: true,
                         })}
                         onClick={handleExpandClick}
                         aria-expanded={expanded}

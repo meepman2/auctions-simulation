@@ -130,14 +130,14 @@
 			"id": 8,
 			"name": "Jaguar E-Type",
 			"region": "Europe",
-			"country": "Italy",
+			"country": "Sweden",
 			"dateCreated": "1961",
 			"bodyType": "2 seater sports car, convertible",
 			"description": "It is a British sports car that was manufactured by Jaguar Cars Ltd in 1961. Its combination of beauty and high performance establish the model as an icon of the motoring world.",
 			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/vintage-cars%2Fcar-10.jpeg?alt=media&token=01478257-8cb8-482c-a797-046054e9f0e6",
 			"geometry": {
 				"type": "Point",
-				"coordinates": [10.5674, 49.8719]
+				"coordinates": [17.5674, 66.8719]
 			},
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",

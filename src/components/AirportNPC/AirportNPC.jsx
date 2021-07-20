@@ -31,11 +31,11 @@ const useStyles = makeStyles(theme => ({
 		transform: "rotate(180deg)",
 	},
 	form: {
-		margin: "0 0 20px 50px",
+		margin: "0 0 20px 0px",
 		width: 200,
 	},
 	paybutton: {
-		margin: "0 0 20px 50px",
+		margin: "0 0 20px 0px",
 		backgroundColor: "purple",
 		color: "#ffffff",
 	},
@@ -103,7 +103,7 @@ function AirportNPC() {
 			/>
 			<Collapse in={expanded} timeout="auto" unmountOnExit>
 				<CardContent>
-					<form className={classes.root} autoComplete="off">
+					<form autoComplete="off">
 						<TextField
 							className={classes.form}
 							size="small"
