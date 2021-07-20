@@ -11,8 +11,11 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        width: 300,
-        margin: "0 55%",
+        width: 275,
+        float: 'right',
+        position: 'absolute',
+        right: '0',
+        top: '0'
     },
     expand: {
         zIndex: '9999'
@@ -45,10 +48,10 @@ function RulesCard() {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        You can choose from the below 3 moves in each turn.
-                        <p>1. <span style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Buy</span> an item</p>
-                        <p>2. <span style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Sell</span> an item to the expert</p>
-                        <p>3. <span style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Travel</span> to a different country</p>
+                        You can do 3 moves in each turn. You need to choose between -
+                        <p style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Buy</p>
+                        <p style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Sell</p>
+                        <p style={{color: 'purple', fontWeight: '700', fontSize: '20px'}}>Travel upto 2 times</p>
                     </Typography>
                 </CardContent>
             </Collapse>

@@ -17,9 +17,8 @@ import currency from "currency.js";
 const useStyles = makeStyles(theme => ({
 	root: {
 		width: 245,
-		float: "right",
 		padding: 10,
-		marginRight: "10px",
+		margin: "0 60%"
 	},
 	expand: {
 		transform: "rotate(0deg)",

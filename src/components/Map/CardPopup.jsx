@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CardPopup = ({ selectedArtifact, handleCloseArtifact }) => {
+const CardPopup = ({ selectedArtifact, handleCloseArtifact, setAuctionedArtifact }) => {
   const classes = useStyles();
   const [openModal, setOpenModal] = useState(false);
 
@@ -54,8 +54,7 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact }) => {
       }
       return acc;
     }, '');
-    console.log('Component', Component);
-    return <Component artifact={selectedArtifact} />
+    return <Component artifact={selectedArtifact} setAuctionedArtifact={setAuctionedArtifact} />
   }
 
   return (

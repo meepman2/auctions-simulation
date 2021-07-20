@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import Tabs from "../Tabs/CustomizedTabs";
 import AuctionTimer from "../Timer/AuctionTimer";
 import currency from "currency.js";
+import Button from '../CustomizedButton/CustomizedButton';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -27,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-export default function FirstPricedAuction({ artifact }) {
+export default function FirstPricedAuction({ artifact, setAuctionedArtifact }) {
 	const classes = useStyles();
 	const time = new Date();
 	time.setSeconds(time.getSeconds() + 150);
@@ -70,6 +71,7 @@ export default function FirstPricedAuction({ artifact }) {
           <h3>FOLLOW BELOW STEPS</h3>
           <Tabs stepsData={steps} />
           <AuctionTimer expiryTimestamp={time} />
+          <Button buttontext={'Start!'} onClick={setAuctionedArtifact} />
         </CardContent>
       </Card>
     </div>

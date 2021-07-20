@@ -34,7 +34,9 @@ const useStyles = makeStyles((theme) => ({
   closeicon: {
     float: 'right',
     backgroundColor: '#ffffff',
-    color: '#000000'
+    color: '#000000',
+    marginRight: '50px',
+    marginTop: '20px'
   }
 }));
 
