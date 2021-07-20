@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		width: 245,
 		padding: 10,
-		margin: "0 60%"
+		margin: "0 60%",
 	},
 	expand: {
 		transform: "rotate(0deg)",
@@ -55,13 +55,15 @@ function AirportNPC() {
 	const [fare, setFare] = useState(0);
 
 	useEffect(() => {
-		const distance = getDistance(
+		let distance = getDistance(
 			{ latitude: departureCoordinates[1], longitude: departureCoordinates[0] },
 			{ latitude: arrivalCoordinates[1], longitude: arrivalCoordinates[0] }
 		);
 
+		distance = Math.round(distance / 1000000) * 100;
+
 		setFare(currency(distance, { pattern: `# ` }).format());
-	}, [departureCoordinates]);
+	}, [departureCoordinates, arrivalCoordinates]);
 
 	const handleChange = event => {
 		const { name, value } = event.target;
