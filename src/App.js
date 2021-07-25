@@ -1,16 +1,35 @@
 import React from "react";
 import Map from "./components/Map/Map";
 import "./App.css";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
-import CardContent from "@material-ui/core/CardContent";
-import TextField from "@material-ui/core/TextField";
+import { yellow, blue, green } from "@material-ui/core/colors";
+
+const teams = [{
+	id: 1,
+	name: 'blue',
+	color: blue[500],
+	initialAmt: 100000,
+	currentAmt: 100000,
+	numberOfCars: 0,
+},{
+	id: 2,
+	name: 'green',
+	color: green[500],
+	initialAmt: 100000,
+	currentAmt: 100000,
+	numberOfCars: 0,
+},{
+	id: 3,
+	name: 'yellow',
+	color: yellow[500],
+	initialAmt: 100000,
+	currentAmt: 100000,
+	numberOfCars: 0,
+}];
 
 function App() {
 	return (
 		<div>
-			<Map />
+			<Map teams={teams} />
 		</div>
 	);
 }

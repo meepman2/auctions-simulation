@@ -16,7 +16,9 @@
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
 			"originalValue": 10000,
-			"render": true
+			"render": true,
+			"sellingPrice": 16000,
+			"buyingPrice": 14000
 		},
 		{
 			"id": 2,
@@ -34,7 +36,9 @@
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
 			"originalValue": 15000,
-			"render": true
+			"render": true,
+			"sellingPrice": 16000,
+			"buyingPrice": 12000
 		},
 		{
 			"id": 3,
@@ -52,7 +56,9 @@
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
 			"originalValue": 20000,
-			"render": true
+			"render": true,
+			"sellingPrice": 22000,
+			"buyingPrice": 18000
 		},
 		{
 			"id": 4,
@@ -70,7 +76,9 @@
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
 			"originalValue": 25000,
-			"render": true
+			"render": true,
+			"sellingPrice": 28000,
+			"buyingPrice": 26000
 		},
 		{
 			"id": 5,
@@ -88,7 +96,9 @@
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
 			"originalValue": 30000,
-			"render": true
+			"render": true,
+			"sellingPrice": 34000,
+			"buyingPrice": 29000
 		},
 		{
 			"id": 6,
@@ -106,7 +116,9 @@
 			"auctionType": "1",
 			"auctionDescription": "First priced sealed-bid auction",
 			"originalValue": 10000,
-			"render": true
+			"render": true,
+			"sellingPrice": 9000,
+			"buyingPrice": 10000
 		},
 		{
 			"id": 7,
@@ -124,7 +136,9 @@
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
 			"originalValue": 40000,
-			"render": true
+			"render": true,
+			"sellingPrice": 45000,
+			"buyingPrice": 35000
 		},
 		{
 			"id": 8,
@@ -142,7 +156,9 @@
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
 			"originalValue": 60000,
-			"render": true
+			"render": true,
+			"sellingPrice": 55000,
+			"buyingPrice": 61000
 		},
 		{
 			"id": 9,
@@ -160,7 +176,9 @@
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
 			"originalValue": 35000,
-			"render": true
+			"render": true,
+			"sellingPrice": 38000,
+			"buyingPrice": 33000
 		},
 		{
 			"id": 10,
@@ -178,7 +196,9 @@
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
 			"originalValue": 45000,
-			"render": true
+			"render": true,
+			"sellingPrice": 47000,
+			"buyingPrice": 40000
 		},
 		{
 			"id": 11,
@@ -196,7 +216,9 @@
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
 			"originalValue": 37000,
-			"render": true
+			"render": true,
+			"sellingPrice": 30000,
+			"buyingPrice": 36000
 		},
 		{
 			"id": 12,
@@ -214,7 +236,9 @@
 			"auctionType": "2",
 			"auctionDescription": "second priced sealed-bid auction",
 			"originalValue": 62000,
-			"render": true
+			"render": true,
+			"sellingPrice": 60000,
+			"buyingPrice": 59000
 		},
 		{
 			"id": 13,
@@ -232,7 +256,9 @@
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 56000,
-			"render": true
+			"render": true,
+			"sellingPrice": 55000,
+			"buyingPrice": 60000
 		},
 		{
 			"id": 14,
@@ -250,7 +276,9 @@
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 39000,
-			"render": true
+			"render": true,
+			"sellingPrice": 60000,
+			"buyingPrice": 45000
 		},
 		{
 			"id": 15,
@@ -268,25 +296,29 @@
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 22000,
-			"render": true
+			"render": true,
+			"sellingPrice": 35000,
+			"buyingPrice": 28000
 		},
 		{
 			"id": 16,
 			"name": "Ford F100 Pickup",
 			"region": "Asia",
-			"country": "India",
+			"country": "China",
 			"dateCreated": "1942",
 			"bodyType": "2 seater, non-convertible, open-roof, truck",
 			"description": "This was the first truck produced by Ford that had a bed at the back of the truck.",
 			"imageURL": "https://firebasestorage.googleapis.com/v0/b/auctions-f601d.appspot.com/o/vintage-cars%2Fcar-18.png?alt=media&token=cab2ab4b-40d8-4167-af69-338c3fc9b00b",
 			"geometry": {
 				"type": "Point",
-				"coordinates": [74, 25]
+				"coordinates": [100, 35]
 			},
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 68000,
-			"render": true
+			"render": true,
+			"sellingPrice": 66000,
+			"buyingPrice": 55000
 		},
 		{
 			"id": 17,
@@ -304,7 +336,9 @@
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 43000,
-			"render": true
+			"render": true,
+			"sellingPrice": 48000,
+			"buyingPrice": 45000
 		},
 		{
 			"id": 18,
@@ -322,7 +356,9 @@
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 55000,
-			"render": true
+			"render": true,
+			"sellingPrice": 57000,
+			"buyingPrice": 60000
 		},
 		{
 			"id": 19,
@@ -340,7 +376,9 @@
 			"auctionType": "3",
 			"auctionDescription": "English auction",
 			"originalValue": 77000,
-			"render": true
+			"render": true,
+			"sellingPrice": 60000,
+			"buyingPrice": 79000
 		}
 	]
 }

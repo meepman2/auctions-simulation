@@ -7,6 +7,7 @@ import { green, purple } from '@material-ui/core/colors';
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
+    fontWeight: '700'
   },
 }));
 
