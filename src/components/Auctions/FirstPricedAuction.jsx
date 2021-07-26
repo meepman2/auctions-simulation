@@ -9,6 +9,9 @@ import Tabs from "../Tabs/CustomizedTabs";
 import AuctionTimer from "../Timer/AuctionTimer";
 import currency from "currency.js";
 import Button from '../CustomizedButton/CustomizedButton';
+import TeamsDropdown from '../CurrentTeam/TeamsDropdown';
+import TextField from '@material-ui/core/TextField';
+
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -28,10 +31,12 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-export default function FirstPricedAuction({ artifact, setAuctionedArtifact }) {
+export default function FirstPricedAuction({ artifact, setAuctionedArtifact, updateAmtForTeam, updateArtifactNumberForTeams, teams }) {
 	const classes = useStyles();
 	const time = new Date();
-	time.setSeconds(time.getSeconds() + 150);
+  time.setSeconds(time.getSeconds() + 150);
+  const [winningTeamId, setWinningTeam] = useState();
+  const[winningAuctionValue, setWinningAuctionValue] = useState();
 
 	const steps = [
 		{
@@ -42,7 +47,30 @@ export default function FirstPricedAuction({ artifact, setAuctionedArtifact }) {
 			id: 1,
 			description: "Yell your prices in front of everyone!!",
 		},
-	];
+  ];
+  
+  const updateWinningAuctionTeam = (teamId) => {
+    setWinningTeam(teamId);
+  }
+
+  const updateWinningAuction = (e) => {
+    let updatedAmt = 0;
+    let totalCarsForTeam = 0;
+    teams.forEach(team => {
+      const { id, currentAmt, numberOfCars } = team;
+      if (id === parseInt(winningTeamId)) {
+        updatedAmt = parseInt(currentAmt) - parseInt(winningAuctionValue);
+        totalCarsForTeam = parseInt(numberOfCars) + 1;
+      }
+    })
+    setAuctionedArtifact();
+    updateAmtForTeam(updatedAmt, winningTeamId);
+    updateArtifactNumberForTeams(totalCarsForTeam, winningTeamId);
+  }
+
+  const updateAuctionAmtValue = (e) => {
+    setWinningAuctionValue(e.target.value);
+  }
 
   return (
     <div>
@@ -71,7 +99,12 @@ export default function FirstPricedAuction({ artifact, setAuctionedArtifact }) {
           <h3>FOLLOW BELOW STEPS</h3>
           <Tabs stepsData={steps} />
           <AuctionTimer expiryTimestamp={time} />
-          <Button buttontext={'Start!'} onClick={setAuctionedArtifact} />
+          <div style={{marginTop: '20px'}}>
+            <p>Winning Team is :</p>
+            <TeamsDropdown teams={teams} updateWinningAuctionTeam={updateWinningAuctionTeam} />
+            <TextField id="outlined-basic" variant="outlined" onChange={updateAuctionAmtValue} value={winningAuctionValue} />
+          </div>
+          <Button buttontext={'Close Auction!'} onClick={updateWinningAuction} />
         </CardContent>
       </Card>
     </div>

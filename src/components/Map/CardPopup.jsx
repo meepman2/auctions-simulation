@@ -11,6 +11,7 @@ import Button from '../CustomizedButton/CustomizedButton';
 import CustomizedModal from '../CustomizedModal/CustomizedModal';
 import FirstPricedSealedBid from '../Auctions/FirstPricedSealedBid.jsx';
 import FirstPricedAuction from '../Auctions/FirstPricedAuction.jsx';
+import currency from "currency.js";
 
 
 const auctionTypeMapping = [{
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CardPopup = ({ selectedArtifact, handleCloseArtifact, setAuctionedArtifact }) => {
+const CardPopup = ({ selectedArtifact, handleCloseArtifact, setAuctionedArtifact, teams, updateAmtForTeam, updateArtifactNumberForTeams }) => {
   const classes = useStyles();
   const [openModal, setOpenModal] = useState(false);
 
@@ -54,7 +55,7 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact, setAuctionedArtifact
       }
       return acc;
     }, '');
-    return <Component artifact={selectedArtifact} setAuctionedArtifact={setAuctionedArtifact} />
+    return <Component artifact={selectedArtifact} setAuctionedArtifact={setAuctionedArtifact} teams={teams} updateAmtForTeam={updateAmtForTeam} updateArtifactNumberForTeams={updateArtifactNumberForTeams} />
   }
 
   return (
@@ -82,6 +83,10 @@ const CardPopup = ({ selectedArtifact, handleCloseArtifact, setAuctionedArtifact
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {selectedArtifact.description}
+          </Typography>
+          <br/>
+          <Typography variant="subtitle">
+            Beginning Price : {currency(selectedArtifact.originalValue, { pattern: "# " }).format()}
           </Typography>
         </CardContent>
         <Button buttontext={'Buy!'} onClick={openArtifactDetails} />
