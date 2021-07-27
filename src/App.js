@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { io } from "socket.io-client";
 import Map from "./components/Map/Map";
 import StartScreen from "./components/StartScreen/StartScreen";
 import StagingArea from "./components/StagingArea/StagingArea";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import gameStateContext from "./context/GameContext";
-import "./App.css";
+import { socket } from "./context/SocketContext";
 import { yellow, blue, green } from "@material-ui/core/colors";
 
 const teams = [
@@ -36,14 +35,25 @@ const teams = [
 ];
 
 function App() {
-	const [gameState, setGameState] = useState({});
+	const [gameState, setGameState] = useState({
+		code: "",
+		player: {
+			team: "",
+			gold: 1000000,
+			inventory: [],
+			playerCoordinates: {
+				longitude: 0,
+				latitude: 0,
+			},
+		},
+	});
 	useEffect(() => {
-		const socket = io("http://localhost:5000");
 		socket.on("gameState", handleGameState);
 	}, []);
 
 	const handleGameState = gameState => {
 		gameState = JSON.parse(gameState);
+		console.log(gameState);
 	};
 
 	return (

@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import gameStateContext from "../../context/GameContext";
 import { useHistory } from "react-router-dom";
+import { socket } from "../../context/SocketContext";
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -33,7 +34,7 @@ function StagingArea() {
 	};
 
 	const handleClick = () => {
-		history.push("/map/" + gameState.code);
+		history.push("/map/" + socket.id);
 	};
 
 	return (

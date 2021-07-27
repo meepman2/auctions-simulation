@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { Typography } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
-import { io } from "socket.io-client";
 import { useHistory } from "react-router";
 import gameStateContext from "../../context/GameContext";
+import { socket } from "../../context/SocketContext";
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -24,14 +24,15 @@ function StartScreen() {
 	const history = useHistory();
 	const { gameState, setGameState } = useContext(gameStateContext);
 
-	const handleCreate = () => {
-		const socket = io("http://localhost:5000");
-		socket.on("createGame", code => {
-			setGameState({
-				code: code,
-			});
-			history.push("/staging/" + code);
+	const handleCreate = async () => {
+		await setGameState(prevValues => {
+			return {
+				...prevValues,
+				code: socket.id,
+			};
 		});
+		await socket.emit("createRoom", JSON.stringify(gameState));
+		await history.push("/staging/" + socket.id);
 	};
 
 	const handleChange = event => {
