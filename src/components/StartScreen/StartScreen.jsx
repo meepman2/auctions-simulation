@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { Typography } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import { useHistory } from "react-router";
-import gameStateContext from "../../context/GameContext";
 import { socket } from "../../context/SocketContext";
 
 const useStyles = makeStyles(theme => ({
@@ -22,22 +21,30 @@ const useStyles = makeStyles(theme => ({
 function StartScreen() {
 	const classes = useStyles();
 	const history = useHistory();
-	const { gameState, setGameState } = useContext(gameStateContext);
+	const [player, setPlayer] = useState({
+		playerName: "",
+		teamName: "",
+	});
+	const [joinCode, setJoinCode] = useState({
+		hostCode: "",
+		playerName: "",
+		teamName: "",
+	});
 
-	const handleCreate = async () => {
-		await setGameState(prevValues => {
-			return {
-				...prevValues,
-				code: socket.id,
-			};
-		});
-		await socket.emit("createRoom", JSON.stringify(gameState));
-		await history.push("/staging/" + socket.id);
+	const handleCreate = () => {
+		socket.emit("createRoom", JSON.stringify(player));
+		history.push("/staging/" + socket.id);
 	};
 
 	const handleChange = event => {
 		const { name, value } = event.target;
-		setGameState(prevValues => {
+		setPlayer(prevValues => {
+			return {
+				...prevValues,
+				[name]: value,
+			};
+		});
+		setJoinCode(prevValues => {
 			return {
 				...prevValues,
 				[name]: value,
@@ -46,22 +53,20 @@ function StartScreen() {
 	};
 
 	const handleJoin = () => {
-		const { code } = gameState;
-		if (code) {
-			history.push("/staging/" + code);
-		} else {
-			alert("please enter valid code");
-		}
+		socket.emit("joinRoom", JSON.stringify(joinCode));
+		history.push("/staging/" + joinCode.hostCode);
 	};
 
 	return (
 		<div className={classes.root}>
 			<h1>Auction Game</h1>
+			<TextField className={classes.form} name="playerName" label="Player Name" variant="outlined" onChange={handleChange} />
+			<TextField className={classes.form} name="teamName" label="Team Name" variant="outlined" onChange={handleChange} />
 			<Button className={classes.form} variant="contained" color="primary" onClick={handleCreate}>
 				Create Game
 			</Button>
 			<Typography className={classes.form}>Or</Typography>
-			<TextField className={classes.form} name="code" label="Game Code" variant="outlined" onChange={handleChange} />
+			<TextField className={classes.form} name="hostCode" label="Game Code" variant="outlined" onChange={handleChange} />
 			<Button className={classes.form} variant="contained" color="primary" onClick={handleJoin}>
 				Join Game
 			</Button>

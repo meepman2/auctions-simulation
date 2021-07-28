@@ -36,9 +36,11 @@ const teams = [
 
 function App() {
 	const [gameState, setGameState] = useState({
-		code: "",
+		roomCode: "",
 		player: {
-			team: "",
+			playerId: "",
+			playerName: "",
+			teamName: "",
 			gold: 1000000,
 			inventory: [],
 			playerCoordinates: {
@@ -49,7 +51,7 @@ function App() {
 	});
 	useEffect(() => {
 		socket.on("gameState", handleGameState);
-	}, []);
+	}, [gameState]);
 
 	const handleGameState = gameState => {
 		gameState = JSON.parse(gameState);
