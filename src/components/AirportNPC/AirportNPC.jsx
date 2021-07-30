@@ -70,7 +70,11 @@ function AirportNPC({ updateAmtForTeam, currentTeamId, teams }) {
 	};
 
 	const handlePay = () => {
-		socket.emit("payAirfare", JSON.stringify(fare));
+		let flightData = {
+			clientId: socket.id,
+			fare: fare,
+		};
+		socket.emit("payAirfare", JSON.stringify(flightData));
 	};
 
 	const checkPrice = () => {

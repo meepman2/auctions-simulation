@@ -22,7 +22,7 @@ function StagingArea() {
 	const location = useLocation();
 
 	const handleClick = () => {
-		socket.emit("startGame", "start");
+		socket.emit("startGame", socket.id);
 		history.push("/map/" + location.pathname.substring(9, 29));
 	};
 
